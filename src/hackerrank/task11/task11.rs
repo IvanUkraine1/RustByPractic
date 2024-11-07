@@ -61,3 +61,15 @@ fn main() {
 
     countApplesAndOranges(s, t, a, b, &apples, &oranges);
 }
+
+#[test]
+fn test_count_apples_and_oranges() {
+    let s = 7;
+    let t = 10;
+    let a = 4;
+    let b = 12;
+    let apples = vec![2, 3, -4];
+    let oranges = vec![3, -2, -4];
+
+    countApplesAndOranges(s, t, a, b, &apples, &oranges);
+}

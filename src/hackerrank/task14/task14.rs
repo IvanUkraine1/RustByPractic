@@ -50,3 +50,10 @@ fn main() {
 
     writeln!(&mut fptr).ok();
 }
+
+#[test]
+fn test_breaking_records() {
+    let scores = vec![10, 5, 20, 20, 4, 5, 2, 25, 1];
+    let result = breakingRecords(&scores);
+    assert_eq!(result, vec![2, 4]);
+}

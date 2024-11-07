@@ -26,3 +26,15 @@ fn main() {
 
     writeln!(&mut fptr, "{}", result).ok();
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_aVeryBigSum_basic() {
+        let ar = vec![1000000001, 1000000002, 1000000003, 1000000004, 1000000005];
+        let expected = 5000000015;
+        assert_eq!(aVeryBigSum(&ar), expected);
+    }
+}

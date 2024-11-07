@@ -38,3 +38,17 @@ fn main() {
 
     writeln!(&mut fptr, "{}", result).ok();
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_sock_merchant() {
+        let ar = vec![1, 1, 2, 2, 3, 3];
+        let n = ar.len() as i32;
+
+        let result = sockMerchant(n, &ar);
+        assert_eq!(result, 3);
+    }
+}

@@ -42,3 +42,10 @@ fn main() {
 
     writeln!(&mut fptr, "{}", result).ok();
 }
+
+#[test]
+fn test_migratory_birds() {
+    let arr = vec![1, 1, 2, 2, 3];
+    let result = migratoryBirds(&arr);
+    assert_eq!(result, 1);
+}

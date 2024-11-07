@@ -45,3 +45,10 @@ fn main() {
 
     writeln!(&mut fptr).ok();
 }
+
+#[test]
+fn test_grading_students() {
+    let grades = vec![73, 67, 38, 33];
+    let result = grading_students(&grades);
+    assert_eq!(result, vec![75, 67, 40, 33]);
+}

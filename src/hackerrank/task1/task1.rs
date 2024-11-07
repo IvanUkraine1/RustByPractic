@@ -22,3 +22,16 @@ fn main() {
     let result = simple_array_sum(ar);
     println!("{}", result);
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_simple_array_sum() {
+        let ar = vec![1, 2, 3, 4, 10, 11];
+        let expected_sum = 31;
+        assert_eq!(simple_array_sum(ar), expected_sum);
+    }
+}
+

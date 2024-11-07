@@ -26,3 +26,17 @@ fn main() {
 
     writeln!(&mut fptr, "{}", result).ok();
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_page_count() {
+        let n = 5;
+        let p = 4;
+
+        let result = pageCount(n, p);
+        assert_eq!(result, 0);
+    }
+}

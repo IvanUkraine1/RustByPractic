@@ -45,3 +45,12 @@ fn main() {
 
     writeln!(&mut fptr, "{}", result).ok();
 }
+
+#[test]
+fn test_birthday() {
+    let s = vec![1, 2, 1, 3, 2];
+    let d = 3;
+    let m = 2;
+    let result = birthday(&s, d, m);
+    assert_eq!(result, 2);
+}

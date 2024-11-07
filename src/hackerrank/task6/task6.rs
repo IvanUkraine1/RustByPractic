@@ -21,3 +21,9 @@ fn main() {
 
     staircase(n);
 }
+
+#[test]
+fn test_staircase() {
+    let n = 3;
+    staircase(n);
+}

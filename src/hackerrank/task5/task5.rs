@@ -35,3 +35,9 @@ fn main() {
 
     plusMinus(&arr);
 }
+
+#[test]
+fn test_plus_minus() {
+    let arr = vec![1, -1, 0];
+    plusMinus(&arr);
+}

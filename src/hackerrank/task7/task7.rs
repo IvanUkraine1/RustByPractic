@@ -26,3 +26,9 @@ fn main() {
 
     miniMaxSum(&arr);
 }
+
+#[test]
+fn test_mini_max_sum() {
+    let arr = vec![1, 2, 3, 4, 5];
+    miniMaxSum(&arr);
+}

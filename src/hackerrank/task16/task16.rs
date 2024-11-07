@@ -44,3 +44,12 @@ fn main() {
 
     writeln!(&mut fptr, "{}", result).ok();
 }
+
+
+#[test]
+fn test_divisible_sum_pairs() {
+    let ar = vec![1, 2, 3, 4, 5, 10];
+    let k = 5;
+    let result = divisibleSumPairs(6, k, &ar);
+    assert_eq!(result, 3);
+}

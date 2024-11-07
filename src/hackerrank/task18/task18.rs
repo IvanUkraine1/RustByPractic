@@ -39,3 +39,16 @@ fn main() {
 
     bonAppetit(&bill, k, b);
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    #[test]
+    fn test_bon_appetit() {
+        let bill = vec![3, 10, 2, 9];
+        let k = 1;
+        let b = 12;
+
+        bonAppetit(&bill, k, b);
+    }
+}

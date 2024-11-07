@@ -66,3 +66,11 @@ fn main() {
 
     writeln!(&mut fptr, "{}", total).ok();
 }
+
+#[test]
+fn test_get_total_x() {
+    let a = vec![2, 4];
+    let b = vec![16, 32, 96];
+    let result = getTotalX(&a, &b);
+    assert_eq!(result, 3);
+}

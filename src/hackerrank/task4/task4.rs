@@ -40,3 +40,19 @@ fn main() {
 
     writeln!(&mut fptr, "{}", result).ok();
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_diagonal_difference_basic() {
+        let arr = vec![
+            vec![11, 2, 4],
+            vec![4, 5, 6],
+            vec![10, 8, -12]
+        ];
+        let expected = 15;
+        assert_eq!(diagonalDifference(&arr), expected);
+    }
+}

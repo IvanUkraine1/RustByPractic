@@ -31,3 +31,10 @@ fn main() {
 
     writeln!(&mut fptr, "{}", result).ok();
 }
+
+#[test]
+fn test_birthday_cake_candles() {
+    let candles = vec![3, 2, 1, 3];
+    let result = birthdayCakeCandles(&candles);
+    assert_eq!(result, 2);
+}

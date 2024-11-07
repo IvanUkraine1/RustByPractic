@@ -27,3 +27,10 @@ fn main() {
 
     io::stdout().write_all(result.as_bytes()).expect("Failed to write to stdout");
 }
+
+#[test]
+fn test_time_conversion() {
+    let time = "07:05:45PM";
+    let result = time_conversion(time);
+    assert_eq!(result, "19:05:45");
+}
