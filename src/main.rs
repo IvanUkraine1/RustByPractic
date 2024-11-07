@@ -14,6 +14,9 @@ mod chapter17;
 mod chapter18;
 mod chapter19;
 
+mod practic_task;
+mod hackerrank;
+
 fn main() {
     println!("Hello, world!");
 }
